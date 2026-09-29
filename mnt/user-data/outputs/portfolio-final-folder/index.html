@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anishk Verma | Full-Stack Software Developer</title>
+  <meta name="description" content="Portfolio of Anishk Verma, a MERN stack developer who builds and deploys full-stack web apps with React, Node.js, MongoDB and Docker." />
+
+  <!-- Fonts: Bricolage Grotesque for headings, Public Sans for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Thin bar at the top that fills as you scroll -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="nav s1" aria-label="Main">
+    <a class="nav-logo" href="#top" aria-label="Anishk Verma, back to top">Anishk<span>.</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <!-- Swaps which sections are dark and which are light -->
+      <button class="theme-btn" id="themeBtn" aria-label="Swap dark and light sections" title="Swap dark and light sections">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
+          <path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" />
+        </svg>
+      </button>
+      <a class="btn btn-small btn-primary resume-link" href="Anishk_Verma_Resume.pdf" download="Anishk_Verma_Resume.pdf">Resume</a>
+      <button class="nav-menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <!-- Grid with 3 rows: small text on top, the big name in the middle,
+         intro and facts at the bottom. Nothing overlaps the name.
+         The left half is one tone and the right half is the other. -->
+    <header class="hero">
+
+      <!-- Row 1 (left) -->
+      <div class="hc hc-role s1">
+        <p class="hero-role">Full-stack software developer</p>
+        <p class="rotator">I build <span id="rotator" class="rotator-text">MERN stack web apps</span><span class="caret" aria-hidden="true"></span></p>
+        <p class="status"><span class="dot" aria-hidden="true"></span>Open to software developer roles</p>
+      </div>
+
+      <!-- Row 2 (left): dotted background, then the big name on top -->
+      <div class="hc hc-fill s1" aria-hidden="true"></div>
+      <h1 class="hero-name" aria-label="Anishk Verma">
+        <span class="line line-1"><span>Anishk</span></span>
+        <span class="line line-2"><span>Verma</span></span>
+      </h1>
+
+      <!-- Row 3 (left) -->
+      <div class="hc hc-intro s1">
+        <p>
+          I build web apps from the database to the button you click. I work mostly with the
+          MERN stack and have recently started shipping my projects in Docker containers.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#projects">See my projects</a>
+          <a class="btn resume-link" href="Anishk_Verma_Resume.pdf" download="Anishk_Verma_Resume.pdf">Download resume</a>
+          <a class="btn" href="https://github.com/Anishk-web" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Right side: your FULL photo. Save it as photo.jpg next to index.html. -->
+      <div class="hero-photo s2">
+        <figure class="photo-frame">
+          <img src="photo.jpg" alt="Anishk Verma" width="720" height="928"
+               onerror="this.closest('.photo-frame').remove();" />
+        </figure>
+      </div>
+    </header>
+
+    <!-- ============ TECH STRIP ============ -->
+    <div class="marquee s2" aria-label="Technologies I work with">
+      <ul class="marquee-track">
+        <li>React.js</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Tailwind CSS</li><li>JavaScript</li><li>TypeScript</li><li>Docker</li><li>Kubernetes</li><li>Redux Toolkit</li><li>Python</li><li>MySQL</li><li>Git and GitHub</li>
+        <!-- Same list again so the strip loops without a gap -->
+        <li aria-hidden="true">React.js</li><li aria-hidden="true">Node.js</li><li aria-hidden="true">Express.js</li><li aria-hidden="true">MongoDB</li><li aria-hidden="true">Tailwind CSS</li><li aria-hidden="true">JavaScript</li><li aria-hidden="true">TypeScript</li><li aria-hidden="true">Docker</li><li aria-hidden="true">Kubernetes</li><li aria-hidden="true">Redux Toolkit</li><li aria-hidden="true">Python</li><li aria-hidden="true">MySQL</li><li aria-hidden="true">Git and GitHub</li>
+      </ul>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section s2" id="about">
+      <div class="inner split">
+        <h2>About</h2>
+        <div class="about-body">
+          <p class="lead">
+            I'm a software developer who enjoys taking an idea and turning it into a working,
+            deployed web application.
+          </p>
+          <p>
+            I've designed and built full-stack apps with React, Node.js, Express and MongoDB,
+            and I care about the parts users never see: clean REST APIs, secure sign-in,
+            and database queries that stay fast as data grows.
+          </p>
+          <p>
+            My foundation is computer science fundamentals, software engineering practice and
+            problem solving, which makes it easy for me to pick up a new framework or tool.
+            Lately that has meant containerisation and orchestration with Docker and Kubernetes.
+            I also have working knowledge of ServiceNow.
+          </p>
+
+          <dl class="stats">
+            <div class="stat"><dd><span class="count" data-to="2">2</span></dd><dt>full-stack projects built</dt></div>
+            <div class="stat"><dd><span class="count" data-to="1">1</span></dd><dt>industry internship</dt></div>
+            <div class="stat"><dd><span class="count" data-to="40" data-suffix="%">40%</span></dd><dt>best speed-up from query and UI tuning</dt></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section s1" id="experience">
+      <div class="inner split">
+        <h2>Experience</h2>
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <h3>MERN Stack Developer Intern</h3>
+              <p class="job-company">Global Matrix Solution</p>
+            </div>
+            <p class="job-date">July 2025 to September 2025</p>
+          </div>
+          <ul class="points">
+            <li>Built responsive, scalable full-stack web apps with React.js, Node.js, Express.js, MongoDB and Tailwind CSS, turning business requirements into production-ready features.</li>
+            <li>Added secure authentication and authorization with JWT and role-based access control, so each user only reaches the modules and data they should.</li>
+            <li>Improved backend performance by optimizing MongoDB queries and designing efficient database schemas, which made the app more responsive and easier to maintain.</li>
+            <li>Worked in Agile cycles with Git and GitHub: feature development, debugging, testing and code reviews.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section s2" id="projects">
+      <div class="inner split">
+        <h2>Projects</h2>
+
+        <div class="project-list">
+
+          <!-- Project 1: AI Resume Builder -->
+          <article class="project card reveal">
+            <!-- Decorative browser window (pure CSS, no image needed) -->
+            <div class="mock" aria-hidden="true">
+              <div class="mock-bar"><i></i><i></i><i></i><span>resume-builder-client-9ro2.onrender.com</span></div>
+              <div class="mock-body mock-resume">
+                <div class="mock-form"><b></b><b></b><b></b><b class="short"></b><b></b></div>
+                <div class="mock-paper"><em></em><u></u><u></u><u class="short"></u><u></u><u class="short"></u></div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3>AI Resume Builder</h3>
+              <ul class="chips" aria-label="Tech stack">
+                <li>React.js</li><li>Tailwind CSS</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Docker</li>
+              </ul>
+
+              <dl class="metrics">
+                <div><dt>lower data retrieval latency</dt><dd>30%</dd></div>
+                <div><dt>faster template rendering</dt><dd>40%</dd></div>
+                <div><dt>customizable templates</dt><dd>4</dd></div>
+              </dl>
+
+              <ul class="points">
+                <li>Built a scalable AI-powered resume builder with AI-generated content, 4 customizable templates, real-time preview, responsive design and PDF export.</li>
+                <li>Implemented JWT authentication, role-based access control, dynamic resume editing and RESTful APIs for secure sessions and personalized resume management.</li>
+                <li>Optimized MongoDB indexing and backend queries, cutting data retrieval latency by 30% and speeding up template rendering by 40%.</li>
+                <li>Created reusable React components with debounced autosave, state management and asynchronous API calls, so edits appear in real time and no work is lost.</li>
+                <li>Containerized the app with Docker for a simpler local setup and consistent environments from build to deployment.</li>
+              </ul>
+
+              <div class="project-links">
+                <a class="btn btn-primary" href="https://resume-builder-client-9ro2.onrender.com/" target="_blank" rel="noopener">Live demo</a>
+                <!-- Points to your GitHub profile. Replace with the repo link when you have it. -->
+                <a class="btn" href="https://github.com/Anishk-web" target="_blank" rel="noopener">Source code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: E-Commerce -->
+          <article class="project card reveal">
+            <div class="mock" aria-hidden="true">
+              <div class="mock-bar"><i></i><i></i><i></i><span>e-commerce store</span></div>
+              <div class="mock-body mock-shop">
+                <div class="tile"><s></s><b></b></div><div class="tile"><s></s><b></b></div><div class="tile"><s></s><b></b></div>
+                <div class="tile"><s></s><b></b></div><div class="tile"><s></s><b></b></div><div class="tile"><s></s><b></b></div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3>E-Commerce Platform</h3>
+              <ul class="chips" aria-label="Tech stack">
+                <li>React.js</li><li>Tailwind CSS</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li>
+              </ul>
+
+              <dl class="metrics">
+                <div><dt>faster API response time</dt><dd>35%</dd></div>
+                <div><dt>faster page interaction</dt><dd>40%</dd></div>
+                <div><dt>products supported</dt><dd>20+</dd></div>
+              </dl>
+
+              <ul class="points">
+                <li>Built a full-stack e-commerce platform supporting 20+ products with category filters, secure checkout, a responsive UI and order management.</li>
+                <li>Implemented JWT authentication, RESTful APIs and CRUD operations for users, products and orders, and cut API response time by 35% through MongoDB query optimization.</li>
+                <li>Designed a responsive admin dashboard for inventory, product and order management, which improved page interaction speed by 40%.</li>
+                <li>Developed dynamic cart management, real-time state sync and a smooth checkout flow for accurate order processing.</li>
+              </ul>
+
+              <div class="project-links">
+                <!-- TODO: add a "Live demo" button here once you have the e-commerce link:
+                     <a class="btn btn-primary" href="YOUR_LINK" target="_blank" rel="noopener">Live demo</a> -->
+                <a class="btn btn-primary" href="https://github.com/Anishk-web" target="_blank" rel="noopener">Source code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section s1" id="skills">
+      <div class="inner split">
+        <h2>Skills</h2>
+        <dl class="skill-list">
+          <div class="skill-row">
+            <dt>Languages</dt>
+            <dd><ul class="chips"><li>JavaScript (ES6+)</li><li>TypeScript</li><li>Python</li><li>C / C++</li></ul></dd>
+          </div>
+          <div class="skill-row">
+            <dt>Frontend</dt>
+            <dd><ul class="chips"><li>HTML5</li><li>CSS3</li><li>Tailwind CSS</li><li>React.js</li><li>Redux Toolkit</li><li>Responsive design</li></ul></dd>
+          </div>
+          <div class="skill-row">
+            <dt>Backend</dt>
+            <dd><ul class="chips"><li>Node.js</li><li>Express.js</li><li>RESTful APIs</li><li>JWT authentication</li><li>CRUD operations</li></ul></dd>
+          </div>
+          <div class="skill-row">
+            <dt>Databases</dt>
+            <dd><ul class="chips"><li>MongoDB</li><li>MySQL</li></ul></dd>
+          </div>
+          <div class="skill-row">
+            <dt>DevOps</dt>
+            <dd><ul class="chips"><li>Docker</li><li>Kubernetes</li></ul></dd>
+          </div>
+          <div class="skill-row">
+            <dt>ITSM</dt>
+            <dd><ul class="chips"><li>ServiceNow</li></ul></dd>
+          </div>
+          <div class="skill-row">
+            <dt>Tools and platforms</dt>
+            <dd><ul class="chips"><li>Git</li><li>GitHub</li><li>Vercel</li><li>Render</li><li>npm</li><li>Vite</li><li>VS Code</li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section s2" id="education">
+      <div class="inner split">
+        <h2>Education</h2>
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <h3>Bachelor of Technology (B.Tech), Computer Science and Engineering</h3>
+              <p class="job-company">Quantum University, Roorkee, Uttarakhand</p>
+            </div>
+            <p class="job-date">August 2022 to June 2026</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section s1" id="contact">
+      <div class="inner split">
+        <h2>Contact</h2>
+
+        <div>
+          <p class="lead">Have a role, an internship or a project in mind? Send me a message and I'll reply soon.</p>
+
+          <a class="big-email" href="mailto:anishkverma27@gmail.com">anishkverma27@gmail.com</a>
+
+          <ul class="contact-links">
+            <li><a href="tel:+917037047170">+91 70370 47170</a></li>
+            <li><a href="https://www.linkedin.com/in/Anishk-Verma-192b84283" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/Anishk-web" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a class="resume-link" href="Anishk_Verma_Resume.pdf" download="Anishk_Verma_Resume.pdf">Download resume</a></li>
+          </ul>
+
+          <!-- This form opens your visitor's email app with the message filled in.
+               It needs no server, so it works on GitHub Pages. -->
+          <form class="contact-form" id="contactForm">
+            <label>Your name
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label>Your email
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer s2">
+    <p>&copy; <span id="year">2026</span> Anishk Verma</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
