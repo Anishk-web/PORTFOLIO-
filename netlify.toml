@@ -1,0 +1,4 @@
+# Static HTML/CSS/JS portfolio — no build step required.
+[build]
+  publish = "."
+  command = ""
